@@ -27,7 +27,7 @@ function createExpense(expense) {
 }
 
 function deleteById(id) {
-  const index = expenses.findIndex((item) => item.id === id);
+  const index = expenses.findIndex((item) => item.id === +id);
 
   if (index === -1) {
     return;
